@@ -6,10 +6,12 @@ import ModuleB as mb
 
 file_path = "20231231.csv"
 file_encoding = "EUC-KR"
+
+data = dp.load_data(file_path, file_encoding)
 if data is None:
     print("데이터를 로드하지 못했습니다. 프로그램을 종료합니다.")
     exit()
-    
+
 subjects = dp.valid_subjects(data)
 for i in subjects:
     print(i)
