@@ -30,13 +30,21 @@ pandas의 boolean indexing으로 특정 (입력받은) 과목의 데이터만 �
 
 (1) **visualize**: 데이터를 시각화하는 함수.
 Pandas Dataframe 형식의 데이터 두 개 (d1,d2), 문자열 형식의 데이터 하나(subject) 총 세 개의 parameter를 갖는다. 
+
 matplotlib 내의 bar 함수를 사용해 막대그래프를 그린다. 
+
 rcParams를 이용해 폰트를 사용자의 OS 기본 폰트에 해당하도록 설정한다. 
+
 color="skyblue"의 남학생 막대그래프 (by d1) , color="pink"의 여학생 막대그래프 (by d2) 를 plt.bar( ) 를 이용해 시각화한다. 
+
 plt.xlabel( ),plt.ylabel( ) 을 이용해 x축과 y축 라벨을 지정한다. 
+
 plt.label( )을 이용해 그래프의 제목 및 크기를 지정한다. 
+
 plt.legend( )를 이용해 범례를 표시한다. 
+
 plt.grid( )를 이용해 y축의 격자선을 표시한다. 
+
 plt.show( )를 이용해 그래프를 출력한다.
 
 ## 3. main.py
