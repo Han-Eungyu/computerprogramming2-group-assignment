@@ -3,7 +3,8 @@
 import csv
 import data_proccessing as dp
 
-for i in valid_subjects:
+subjects = dp.valid_subjects()
+for i in subjects:
     print(i)
 
 while True:
