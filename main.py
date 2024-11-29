@@ -2,6 +2,7 @@
 
 import csv
 import data_proccessing as dp
+import ModuleB.py
 
 subjects = dp.valid_subjects()
 for i in subjects:
