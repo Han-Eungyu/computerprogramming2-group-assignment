@@ -1,12 +1,13 @@
 # main.py
 
 import csv
-import data_proccessing.py as dp
-import ModuleB.py as mb
+import data_proccessing as dp
+import ModuleB as mb
 
 subjects = dp.valid_subjects()
 for i in subjects:
     print(i)
+
 
 while True:
     input_subject = input("과목 이름을 입력하세요 >> ")
