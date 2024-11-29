@@ -29,6 +29,7 @@ pandas의 boolean indexing으로 특정 (입력받은) 과목의 데이터만 �
 ### 포함된 함수
 
 (1) **visualize**: 데이터를 시각화하는 함수.
+
 Pandas Dataframe 형식의 데이터 두 개 (d1,d2), 문자열 형식의 데이터 하나(subject) 총 세 개의 parameter를 갖는다. 
 
 matplotlib 내의 bar 함수를 사용해 막대그래프를 그린다. 
