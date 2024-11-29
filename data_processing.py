@@ -13,11 +13,11 @@ def valid_subjects(data):
     """
     데이터프레임에서 '영역' 열의 고유 값을 추출하는 함수.
     """
-    return data["영역"].unique()
+    return data["유형"].unique()
 
 def filter_data_by_subject(data, subject):
     """특정 과목 데이터만 필터링하는 함수"""
-    return data[data["영역"] == subject]
+    return data[data["유형"] == subject]
 
 def prepare_distribution_data(filtered_data):
     """남학생과 여학생의 점수 분포 데이터를 준비하는 함수"""
