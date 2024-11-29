@@ -1,8 +1,8 @@
 # main.py
 
 import csv
-import data_proccessing as dp
-import ModuleB.py
+import data_proccessing.py as dp
+import ModuleB.py as mb
 
 subjects = dp.valid_subjects()
 for i in subjects:
