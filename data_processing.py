@@ -24,9 +24,4 @@ def prepare_distribution_data(filtered_data):
     male_data = filtered_data[["표준점수", "남자"]]
     female_data = filtered_data[["표준점수", "여자"]]
     
-    male_scores = male_data["표준점수"]
-    male_frequencies = male_data["남자"]
-    female_scores = female_data["표준점수"]
-    female_frequencies = female_data["여자"]
-    
-    return male_scores, male_frequencies, female_scores, female_frequencies
+    return male_data, female_data
