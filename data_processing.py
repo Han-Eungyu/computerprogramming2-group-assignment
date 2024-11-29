@@ -11,7 +11,7 @@ def load_data(file_path, file_encoding="EUC-KR"):
 
 def valid_subjects(data):
     """
-    데이터프레임에서 '영역' 열의 고유 값을 추출하는 함수.
+    데이터프레임에서 '유형' 열의 고유 값을 추출하는 함수.
     """
     return data["유형"].unique()
 
