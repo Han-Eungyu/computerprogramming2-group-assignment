@@ -1,8 +1,7 @@
 <문제의 해결 방안>
 본 프로젝트는 두 개의 모듈 파일과 하나의 메인 파일로 구성된다. 
 
-1. data_processing.py
-# data_processing 모듈
+# 1. data_processing 모듈
 
 ## 개요
 이 모듈은 수능 데이터 처리 및 분석을 위한 함수들을 제공한다. 
@@ -21,9 +20,9 @@ pandas의 boolean indexing으로 특정 (입력받은) 과목의 데이터만 �
 
 (4) **prepare_distribution_data**: 남학생/여학생 점수 분포 데이터를 준비하는 함수.
  필터링된 데이프레임을 파라미터로 받아서 남학생과 여학생의 데이터를 나눠 반환하는 함수다. pandas의 열 선택 기능을 이용해 표준점수 열과 성별 열만을 추출했다.
- 
-2. ModuleB.py
 
-3. main.py
+# 2. ModuleB 모듈
+
+# 3. main.py
 사용자로부터 그래프를 표시할 과목명을 입력받는다. 
 data_processing 모듈의 filter_data_by_subject, prepare_distribution_data 함수를 이용하여 추출한 그 과목의 남녀 데이터를 ModuleB 모듈의 visualize 함수의 매개변수로 입력하여 결과 그래프를 화면에 표시한다.
