@@ -1,7 +1,7 @@
 # main.py
 
 import csv
-import data_proccessing as dp
+import data_processing as dp
 import ModuleB as mb
 
 file_path = "20231231.csv"
