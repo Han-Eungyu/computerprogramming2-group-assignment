@@ -21,3 +21,11 @@ while True:
     else:
         break
 print(f"{input_subject} 과목의 도수분포그래프입니다.")
+
+filtered_data = dp.filter_data_by_subject(data, input_subject)
+
+# 남학생과 여학생의 점수 분포 데이터 준비
+male_data, female_data = dp.prepare_distribution_data(filtered_data)
+
+# 분포 그래프 시각화
+mb.visualize(male_data, female_data, input_subject)
