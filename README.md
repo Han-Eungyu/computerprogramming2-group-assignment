@@ -23,6 +23,24 @@ pandas의 boolean indexing으로 특정 (입력받은) 과목의 데이터만 �
 
 ## 2. ModuleB 모듈
 
+### 개요
+해당 모듈은 데이터 시각화 작업을 수행하는 함수를 제공한다. 
+
+### 포함된 함수
+
+(1) **visualize**: 데이터를 시각화하는 함수.
+Pandas Dataframe 형식의 데이터 두 개 (d1,d2), 문자열 형식의 데이터 하나(subject) 총 세 개의 parameter를 갖는다. 
+matplotlib 내의 bar 함수를 사용해 막대그래프를 그린다. 
+rcParams를 이용해 폰트를 사용자의 OS 기본 폰트에 해당하도록 설정한다. 
+color="skyblue"의 남학생 막대그래프 (by d1) , color="pink"의 여학생 막대그래프 (by d2) 를 plt.bar( ) 를 이용해 시각화한다. 
+plt.xlabel( ),plt.ylabel( ) 을 이용해 x축과 y축 라벨을 지정한다. 
+plt.label( )을 이용해 그래프의 제목 및 크기를 지정한다. 
+plt.legend( )를 이용해 범례를 표시한다. 
+plt.grid( )를 이용해 y축의 격자선을 표시한다. 
+plt.show( )를 이용해 그래프를 출력한다.
+
 ## 3. main.py
 사용자로부터 그래프를 표시할 과목명을 입력받는다. 
 data_processing 모듈의 filter_data_by_subject, prepare_distribution_data 함수를 이용하여 추출한 그 과목의 남녀 데이터를 ModuleB 모듈의 visualize 함수의 매개변수로 입력하여 결과 그래프를 화면에 표시한다.
+
+
