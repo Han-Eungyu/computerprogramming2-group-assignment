@@ -9,6 +9,12 @@ def load_data(file_path, encoding="EUC-KR"):
         print(f"데이터 로드 중 오류: {e}")
         return None
 
+def valid_subjects(data):
+    """
+    데이터프레임에서 '영역' 열의 고유 값을 추출하는 함수.
+    """
+    return data["영역"].unique()
+
 def filter_data_by_subject(data, subject):
     """특정 과목 데이터만 필터링하는 함수"""
     return data[data["영역"] == subject]
