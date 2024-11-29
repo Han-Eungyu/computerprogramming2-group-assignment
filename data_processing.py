@@ -1,9 +1,9 @@
 import pandas as pd
 
-def load_data(file_path, encoding="EUC-KR"):
+def load_data(file_path, file_encoding="EUC-KR"):
     """데이터를 로드하는 함수"""
     try:
-        data = pd.read_csv(file_path, encoding=encoding)
+        data = pd.read_csv(file_path, encoding=file_encoding) 
         return data
     except Exception as e:
         print(f"데이터 로드 중 오류: {e}")
