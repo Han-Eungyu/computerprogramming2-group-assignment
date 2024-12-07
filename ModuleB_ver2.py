@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 def visualize(d1, d2, subject, year):
-    plt.rcParams["font.family"] = "Malgun Gothic"
+    plt.rcParams["font.family"] = "AppleGothic"
     plt.rcParams["axes.unicode_minus"] = False
     plt.figure(figsize=(11, 11))
 
