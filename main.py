@@ -4,7 +4,20 @@ import csv
 import data_processing as dp
 import ModuleB as mb
 
-file_path = "20231231.csv"
+while True:
+    year = input("연도를 입력하세요(2020 - 2023) >> ")
+    if ((year == "2020") or (year == "2021") or (year == "2022") or (year == "2023")):
+        break
+
+if year == "2020":
+    file_path = "20201231.csv"
+elif year == "2021":
+    file_path = "20211231.csv"
+elif year == "2022":
+    file_path = "20221231.csv"
+else:
+    file_path = "20231231.csv"
+
 file_encoding = "EUC-KR"
 
 data = dp.load_data(file_path, file_encoding)
