@@ -25,6 +25,3 @@ def prepare_distribution_data(filtered_data):
     female_data = filtered_data[["표준점수", "여자"]]
     
     return male_data, female_data
-
-# 분포 그래프 시각화
-mb.visualize(male_data, female_data, input_subject)
