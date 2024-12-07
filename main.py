@@ -2,7 +2,7 @@
 
 import csv
 import data_processing as dp
-import ModuleB as mb
+import ModuleB_ver2 as mb
 
 while True:
     year = input("연도를 입력하세요 (2020 ~ 2023): ")
