@@ -21,7 +21,7 @@ pandas의 boolean indexing으로 특정 (입력받은) 과목의 데이터만 �
 (4) **prepare_distribution_data**: 남학생/여학생 점수 분포 데이터를 준비하는 함수.
  필터링된 데이프레임을 파라미터로 받아서 남학생과 여학생의 데이터를 나눠 반환하는 함수다. pandas의 열 선택 기능을 이용해 표준점수 열과 성별 열만을 추출했다.
 
-## 2. ModuleB 모듈
+## 2-1. ModuleB 모듈
 
 ### 개요
 해당 모듈은 데이터 시각화 작업을 수행하는 함수를 제공한다. 
@@ -47,6 +47,36 @@ plt.legend( )를 이용해 범례를 표시한다.
 plt.grid( )를 이용해 y축의 격자선을 표시한다. 
 
 plt.show( )를 이용해 그래프를 출력한다.
+
+## 2-2. ModuleB_ver2 모듈
+
+### 개요
+해당 모듈은 데이터 시각화 작업을 수행하는 함수를 제공한다. 
+
+### 포함된 함수
+
+(1) **visualize**: 데이터를 시각화하는 함수.
+
+Pandas Dataframe 형식의 데이터 두 개 (d1,d2), 문자열 형식의 데이터 두 개(subject, year) 총 네 개의 parameter를 갖는다. 
+
+matplotlib 내의 violinplot 함수를 사용해 violin plot을 그린다. 
+
+rcParams를 이용해 폰트를 사용자의 OS 기본 폰트에 해당하도록 설정한다. 
+
+반복문을 이용해 각각의 violin plot의 색상을 지정한다. 
+
+여학생과 남학생 점수의 평균을 hlines( )를 이용해 표시한다. 
+
+plt.xlabel( ),plt.ylabel( ) 을 이용해 x축과 y축 라벨을 지정한다. 
+
+plt.label( )을 이용해 그래프의 제목 및 크기를 지정한다. 
+
+plt.legend( )를 이용해 범례를 표시한다. 
+
+plt.grid( )를 이용해 y축의 격자선을 표시한다. 
+
+plt.show( )를 이용해 그래프를 출력한다.
+
 
 ## 3. main.py
 사용자로부터 그래프를 표시할 연도와 과목명을 차례로 입력 받는다.
