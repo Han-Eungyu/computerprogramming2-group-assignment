@@ -44,4 +44,4 @@ filtered_data = dp.filter_data_by_subject(data, input_subject)
 male_data, female_data = dp.prepare_distribution_data(filtered_data)
 
 # 분포 그래프 시각화
-mb.visualize_violin(male_data, female_data, input_subject, year)
+mb.visualize(male_data, female_data, input_subject, year)
