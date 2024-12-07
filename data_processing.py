@@ -6,7 +6,7 @@ import ModuleB as mb
 
 while True:
     year = input("연도를 입력하세요(2020 - 2023) >> ")
-    if ((year = "2020") or (year = "2021") or (year = "2022") or (year = "2023")):
+    if ((year == "2020") or (year == "2021") or (year == "2022") or (year == "2023")):
         break
 
 if year == "2020":
