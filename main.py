@@ -5,18 +5,19 @@ import data_processing as dp
 import ModuleB as mb
 
 while True:
-    year = input("연도를 입력하세요(2020 - 2023) >> ")
-    if ((year == "2020") or (year == "2021") or (year == "2022") or (year == "2023")):
+    year = input("연도를 입력하세요 (2020 ~ 2023): ")
+    if year in ["2020", "2021", "2022", "2023"]:
         break
+    else:
+        print("잘못된 입력입니다.")
 
-if year == "2020":
-    file_path = "20201231.csv"
-elif year == "2021":
-    file_path = "20211231.csv"
-elif year == "2022":
-    file_path = "20221231.csv"
-else:
-    file_path = "20231231.csv"
+file_paths = {
+    "2020": "20201231.csv",
+    "2021": "20211231.csv",
+    "2022": "20221231.csv",
+    "2023": "20231231.csv"
+}
+file_path = file_paths[year]
 
 file_encoding = "EUC-KR"
 
@@ -35,7 +36,7 @@ while True:
         print("잘못된 과목 이름입니다.")
     else:
         break
-print(f"{input_subject} 과목의 도수분포그래프입니다.")
+print(f"{input_subject} 과목의 Violin Plot입니다.")
 
 filtered_data = dp.filter_data_by_subject(data, input_subject)
 
@@ -43,4 +44,4 @@ filtered_data = dp.filter_data_by_subject(data, input_subject)
 male_data, female_data = dp.prepare_distribution_data(filtered_data)
 
 # 분포 그래프 시각화
-mb.visualize(male_data, female_data, input_subject)
+mb.visualize_violin(male_data, female_data, input_subject, year)
