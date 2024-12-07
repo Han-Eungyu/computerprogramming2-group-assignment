@@ -49,8 +49,9 @@ plt.grid( )를 이용해 y축의 격자선을 표시한다.
 plt.show( )를 이용해 그래프를 출력한다.
 
 ## 3. main.py
-사용자로부터 그래프를 표시할 과목명을 입력받는다. 
+사용자로부터 그래프를 표시할 연도와 과목명을 차례로 입력 받는다.
 
 **data_processing** 모듈의 **filter_data_by_subject, prepare_distribution_data** 함수를 이용하여 추출한 그 과목의 남녀 데이터를 **ModuleB** 모듈 **visualize** 함수의 매개변수로 입력하여 결과 그래프를 화면에 표시한다.
+
 
 
